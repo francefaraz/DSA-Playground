@@ -59,8 +59,8 @@ import json
 
 # Example values; replace with your actual key, IV, and encrypted data
 secret_key_hex = '0123456789abcdef0123456789abcdef'  # 24-byte key for AES-192
-iv_hex = 'b160f187f1211308b3cb77acfd57d76c'  # Initialization Vector (must be 16 bytes long)
-encrypted_data = '2/bXSi57xQoTxMbg9UUIXWjgInQ+rosYOGBlQ48doCqFszkpuez/8ohpraLAl2Do3tN6zku0Dx7STLK4KgWV8lv7Xi3hn2YiSpKzVTlf+YlcgnHuChKSWlyaGZl6ImMYg6lAIu11AKMb1/5LTHWVP9uzbSTC47sA1rDI/R0BbezqV1OOciU3bLlMIHR09IV33Hd/9uY+WYyQLD70TpFMvduWt+JYR1pyT41udg5/sAmMRCrr+cfJyIYU7GI0n24ysvf8LV0H5+ZoRvKjsmqLRm05Z+pydHuePLTk1RjrYTNAgzCZOQGUCsBTmfU8sATwI9nOOj58arQXGoUReVQB95XwJ+EjHjTjAopDKaNqYKcsLX+OgoCi2gy5dWbsmf0TVZHAipbBSMwbxx7/oiQIQw=='  # Your Base64-encoded encrypted data
+iv_hex = 'ddf9bddec7dbdd5fbee3209165e30278'  # Initialization Vector (must be 16 bytes long)
+encrypted_data = 'RFqxhv9yJ08nD5yQ3ju7zl8xy7Gd/oCPDCbyJoHo1n7OhBpIoEfMZZYcS3XMlIE+DMgbkxJVnUySxs+/OSHdAN5T0AxwJmFPHjHUCWp9UHCjLwdVt/+436B4qlu4fuDbTWaJ73bo8AhjnFNX2hCNNg1SCSYj4uS1Y8TOiHuMQnva9yAhnNH1no2hb9XTXhWsA5J98gMfxJ6AwPlxx3FCLLIgDpWNX0Udozp/R2AoIyf6q/3ycMa3xrjrrjAMlDXulv2Lb5YoNDCplpR/fo4+NIPdLA1hDphhciSBWGA27lF0a8g+/zit9Qj9pgKtYQv17qJnDPvjC5xYXEY0JTGs8xVsq/WNZ1A1OIoPdXFwCNeELrhIaMWh9Ix5SzlF43375eKVO+/idEw1ZoRbs07XIDOZCGfj/c0riZCAg3mhHuTB2gn8xOx5zJnI3DTSb/jQqjGwDfxnDxJDTbOzEPwGqsEn/+YjUbPD3RGoi7ekfIXXqeo279l/B9J9N7gE+n3EUu9q5XxGPtrWVkfSwjiyHtffqRS4mRWi8UK0CgrB7jZthV2EAMaDyU6ntc9zJskNBhwhUnXIbe6RKrF2AZWq1w6y8AyHYlj+OSkwzS9bpVn0JES06hvIQISETVUpAKkxuuTy2sFi5LTn+x7aFzZmsalQcT64SOsoUS99S+XgxOg='  # Your Base64-encoded encrypted data
 
 # Decode Base64-encoded encrypted data
 ciphertext = base64.b64decode(encrypted_data)
@@ -112,3 +112,6 @@ except json.JSONDecodeError as e:
     print(f"Error decoding JSON: {e}")
 
 
+
+
+# {"payload":"RFqxhv9yJ08nD5yQ3ju7zl8xy7Gd/oCPDCbyJoHo1n7OhBpIoEfMZZYcS3XMlIE+DMgbkxJVnUySxs+/OSHdAN5T0AxwJmFPHjHUCWp9UHCjLwdVt/+436B4qlu4fuDbTWaJ73bo8AhjnFNX2hCNNg1SCSYj4uS1Y8TOiHuMQnva9yAhnNH1no2hb9XTXhWsA5J98gMfxJ6AwPlxx3FCLLIgDpWNX0Udozp/R2AoIyf6q/3ycMa3xrjrrjAMlDXulv2Lb5YoNDCplpR/fo4+NIPdLA1hDphhciSBWGA27lF0a8g+/zit9Qj9pgKtYQv17qJnDPvjC5xYXEY0JTGs8xVsq/WNZ1A1OIoPdXFwCNeELrhIaMWh9Ix5SzlF43375eKVO+/idEw1ZoRbs07XIDOZCGfj/c0riZCAg3mhHuTB2gn8xOx5zJnI3DTSb/jQqjGwDfxnDxJDTbOzEPwGqsEn/+YjUbPD3RGoi7ekfIXXqeo279l/B9J9N7gE+n3EUu9q5XxGPtrWVkfSwjiyHtffqRS4mRWi8UK0CgrB7jZthV2EAMaDyU6ntc9zJskNBhwhUnXIbe6RKrF2AZWq1w6y8AyHYlj+OSkwzS9bpVn0JES06hvIQISETVUpAKkxuuTy2sFi5LTn+x7aFzZmsalQcT64SOsoUS99S+XgxOg=","iv":"ddf9bddec7dbdd5fbee3209165e30278"}
