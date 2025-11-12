@@ -36,7 +36,7 @@ async def payload_encryption(request_body):
 
 
 # Example usage
-request_body =  {"toAccountShareID":"48543850001","fromAccountShareID":"49997149101","fromAccountNumber":"499971491","toAccountNumber":"485438500","fundAmount":"0.54","toAccountGroup":3,"fromAccountGroup":"3","routingNumber":"055003612","isExternalAccount":False,"toAccountType":"CDA","toAccountDesc":"Growth Savings","fromAccountType":"S","hostAccountIds":[29161,29178]}
+request_body =  {'accountNumber': 9450000001, 'subAccountType': '103090369', 'routingNumber': '107001481', 'regionId': '9'}
 
 
 async def main():
